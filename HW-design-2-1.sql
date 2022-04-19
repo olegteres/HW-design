@@ -40,6 +40,7 @@ create table if not exists songer_album (
 	album_id integer references album(id),
 	songer_id integer references songer(id),
 	constraint songer_album_pk primary key (songer_id, album_id)
+);
 	
 create table if not exists collection_track (
 	collection_id integer references collection(id),
